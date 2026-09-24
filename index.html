@@ -1,175 +1,401 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="A journal of my biking trips.">
-    <meta name="author" content="Trent Van Bemmel">
-    <title>Rolling On</title>
-
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" type="text/css" href=/css/bootstrap.min.css>
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href=/css/blog.css>
-    <script type="module" src="/lib/tyquote.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trent Van Bemmel - Senior Application Developer at Interstates specializing in Document Conversion, File-Based RAG (OKF), Go, and resilient distributed systems.">
+  <title>Trent Van Bemmel | trentvb.com</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+      document.documentElement.classList.remove('dark');
+    } else if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
+  <script type="module" crossorigin src="/assets/index-BNhlMzQw.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-nHzWg7vK.css">
 </head>
+<body class="bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100 antialiased min-h-screen selection:bg-neutral-200 dark:selection:bg-neutral-800 transition-colors duration-150">
 
-<body>
-    <div class="container">
-        <header class="blog-header py-3">
-            <div class="row flex-nowrap justify-content-between align-items-center">                
-                <div class="col-12 text-center">
-                    <a class="blog-header-logo text-dark" href="#">Rolling On</a>
-                </div>                
-            </div>
-        </header>
-
-        <div class="nav-scroller py-1 mb-2">
-            <nav class="nav d-flex justify-content-between">
-                <a class="p-2 text-muted" href="/">Home</a>
-                <a class="p-2 text-muted" href="/about/">About Me</a>
-            </nav>
-        </div>       
-    </div>
-
-    <main role="main" class="container">
-        <div class="pb-4 text-center">
-  <img class="img-fluid rounded" src="/img/front-head.jpg">
-</div>
-<div class="row mb-2">
-  <div class="col-md-6">
-    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-      <div class="col p-4 d-flex flex-column position-static">
-        <strong class="d-inline-block mb-2">Oskaloosa</strong>
-        
-        
-        
-        <ol class="postlist" style="counter-reset: start-from 8">
-    
-        
-            <li class="postlist-item">
-                <a href="/oskaloosa/one/" class="postlist-link">
-                    Why
-                    
-                </a>
-                &nbsp;
-                <time class="postlist-date" datetime="2019-03-09">Mar 09 2019 </time>
-            </li>
-            
-        
-        
-            <li class="postlist-item">
-                <a href="/oskaloosa/two/" class="postlist-link">
-                    Let&#39;s do this.
-                    
-                </a>
-                &nbsp;
-                <time class="postlist-date" datetime="2019-07-24">Jul 24 2019 </time>
-            </li>
-            
-        
-        
-            <li class="postlist-item">
-                <a href="/oskaloosa/three/" class="postlist-link">
-                    Day 1
-                    
-                </a>
-                &nbsp;
-                <time class="postlist-date" datetime="2019-07-25">Jul 25 2019 </time>
-            </li>
-            
-        
-        
-            <li class="postlist-item">
-                <a href="/oskaloosa/five/" class="postlist-link">
-                    Day 2
-                    
-                </a>
-                &nbsp;
-                <time class="postlist-date" datetime="2019-07-29">Jul 29 2019 </time>
-            </li>
-            
-        
-        
-            <li class="postlist-item">
-                <a href="/oskaloosa/four/" class="postlist-link">
-                    Day 3
-                    
-                </a>
-                &nbsp;
-                <time class="postlist-date" datetime="2019-07-30">Jul 30 2019 </time>
-            </li>
-            
-        
-        
-            <li class="postlist-item">
-                <a href="/oskaloosa/six/" class="postlist-link">
-                    Day 4
-                    
-                </a>
-                &nbsp;
-                <time class="postlist-date" datetime="2019-07-30">Jul 30 2019 </time>
-            </li>
-            
-        
-        
-        
-    </ol>
+  <!-- TOP MASTHEAD -->
+  <header class="border-b border-neutral-200 dark:border-neutral-850 px-6 py-5 no-print">
+    <div class="max-w-2xl mx-auto flex items-center justify-between">
+      <a href="/" class="font-mono text-sm tracking-tight font-medium text-neutral-900 dark:text-neutral-100 hover:opacity-80">
+        trentvb.com
+      </a>
+      <div class="flex items-center gap-4 text-xs font-mono text-neutral-500">
+        <button onclick="toggleTheme()" class="hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors" title="Toggle theme (shortcut: 'T')">
+          [<span id="themeBtnLabel">light</span>]
+        </button>
       </div>
     </div>
-  </div>
-  <div class="col-md-6">
-    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-      <div class="col p-4 d-flex flex-column position-static">
-        <strong class="d-inline-block mb-2">Misc</strong>
-        
-        
-        
-        <ol class="postlist" style="counter-reset: start-from 3">
-    
-        
-            <li class="postlist-item">
-                <a href="/misc/grass_seed/" class="postlist-link">
-                    Grass Seed
-                    
-                </a>
-                &nbsp;
-                <time class="postlist-date" datetime="2022-04-29">Apr 29 2022 </time>
-            </li>
-            
-        
-        
-        
-    </ol>
+  </header>
+
+  <!-- MAIN EDITORIAL CONTENT -->
+  <main class="max-w-2xl mx-auto px-6 py-16 sm:py-20 space-y-20">
+
+    <!-- HERO: The "Business Card" Statement -->
+    <section class="space-y-6">
+      <div class="space-y-2">
+        <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-neutral-950 dark:text-white">
+          Trent Van Bemmel
+        </h1>
+        <p class="text-sm font-mono text-neutral-500 dark:text-neutral-400">
+          Senior Application Developer • Interstates
+        </p>
       </div>
-    </div>
-  </div>
-</div>
-    </main><!-- /.container -->   
+
+      <div class="space-y-4 text-neutral-700 dark:text-neutral-300 leading-relaxed text-base">
+        <p>
+          I am a software engineer with over 18 years of continuous experience building dependable, full-lifecycle enterprise systems. Currently, I work on the <strong>AI Delivery Team</strong> at <strong>Interstates</strong>, researching and building information platforms using RAG strategies, with a dedicated focus on <strong>document conversion, structural fidelity, and file-based knowledge stores (such as OKF)</strong>.
+        </p>
+        <p>
+          My technical foundation centers on <strong>Go (Golang)</strong>, <strong>C# (.NET)</strong>, <strong>TypeScript</strong>, and <strong>SQLite WASM</strong>—building compiled, stable services that avoid dependency churn and withstand the test of time. That engineering discipline is paired with a Bachelor of Arts in English Literature, giving me a deep appreciation for language, syntax, and document hierarchy.
+        </p>
+      </div>
+
+      <!-- Simple Contact Strip -->
+      <div class="pt-2 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-mono text-neutral-500 dark:text-neutral-400">
+        <a href="mailto:trentvb@gmail.com" class="text-neutral-900 dark:text-neutral-100 hover:underline">trentvb@gmail.com</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors">LinkedIn ↗</a>
+        <span>Rock Valley & Hull, Iowa</span>
+      </div>
+    </section>
+
+    <!-- SECTION: DOCUMENT CONVERSION & FILE-BASED RAG -->
+    <section class="space-y-6 pt-4 border-t border-neutral-200 dark:border-neutral-850">
+      <div class="space-y-1">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-neutral-400 dark:text-neutral-500 font-semibold">
+          Approach & AI Delivery
+        </h2>
+        <h3 class="text-lg font-bold text-neutral-950 dark:text-white">
+          Document Conversion & File-Based RAG
+        </h3>
+      </div>
+
+      <p class="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
+        In industrial and enterprise engineering, documents are dense: electrical specifications, schedules, multi-column blueprints, and tables. Naive text splitting destroys this context. My work on the AI Delivery Team centers on transforming messy unstructured files into high-fidelity, structured representations:
+      </p>
+
+      <div class="space-y-4 font-sans text-sm">
+        
+        <div class="flex gap-4 items-start">
+          <span class="font-mono text-xs text-neutral-400 dark:text-neutral-500 pt-0.5">01</span>
+          <div>
+            <strong class="font-medium text-neutral-900 dark:text-neutral-100">Layout-Aware Ingestion:</strong>
+            <span class="text-neutral-600 dark:text-neutral-400 ml-1">
+              Extracting text from PDFs, Office files, and technical specs while preserving H1–H4 section hierarchy, list numbering, and structural boundaries.
+            </span>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <span class="font-mono text-xs text-neutral-400 dark:text-neutral-500 pt-0.5">02</span>
+          <div>
+            <strong class="font-medium text-neutral-900 dark:text-neutral-100">Table & Structural Fidelity:</strong>
+            <span class="text-neutral-600 dark:text-neutral-400 ml-1">
+              Translating complex tabular data into clean Markdown tables so language models can parse rows, columns, and metric labels without spatial confusion.
+            </span>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <span class="font-mono text-xs text-neutral-400 dark:text-neutral-500 pt-0.5">03</span>
+          <div>
+            <strong class="font-medium text-neutral-900 dark:text-neutral-100">File-Based Knowledge Repositories (OKF):</strong>
+            <span class="text-neutral-600 dark:text-neutral-400 ml-1">
+              Organizing documents into transparent, version-controlled Markdown files with standardized YAML frontmatter metadata, keeping the knowledge layer deterministic, auditable, and lightweight.
+            </span>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <span class="font-mono text-xs text-neutral-400 dark:text-neutral-500 pt-0.5">04</span>
+          <div>
+            <strong class="font-medium text-neutral-900 dark:text-neutral-100">Selective Context Packaging:</strong>
+            <span class="text-neutral-600 dark:text-neutral-400 ml-1">
+              Navigating document hierarchy to extract precise, coherent sections with parent breadcrumbs rather than sending noisy token fragments to model prompts.
+            </span>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <span class="font-mono text-xs text-neutral-400 dark:text-neutral-500 pt-0.5">05</span>
+          <div>
+            <strong class="font-medium text-neutral-900 dark:text-neutral-100">Grounding & Local Benchmarks:</strong>
+            <span class="text-neutral-600 dark:text-neutral-400 ml-1">
+              Anchoring model responses directly to source document citations, while benchmarking prompt performance against local models (Ollama, llama.cpp) on an on-premise home server.
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: NOTABLE ARCHITECTURAL WORK -->
+    <section class="space-y-6 pt-4 border-t border-neutral-200 dark:border-neutral-850">
+      <div class="space-y-1">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-neutral-400 dark:text-neutral-500 font-semibold">
+          Selected Systems
+        </h2>
+        <h3 class="text-lg font-bold text-neutral-950 dark:text-white">
+          Architectural Milestones
+        </h3>
+      </div>
+
+      <div class="space-y-8">
+
+        <!-- Item 1 -->
+        <article class="space-y-2">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <h4 class="font-semibold text-neutral-900 dark:text-neutral-100">
+              WebSQL to SQLite WASM Migration
+            </h4>
+            <span class="font-mono text-xs text-neutral-400 dark:text-neutral-500">Zero-Downtime Client DB</span>
+          </div>
+          <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+            Maintained a major enterprise application organizing electrical construction data. When browsers deprecated WebSQL, re-architected client-side storage to SQLite compiled to WebAssembly (WASM), preserving offline execution and query performance with zero user disruption.
+          </p>
+          <div class="font-mono text-xs text-neutral-400 dark:text-neutral-500 pt-1">
+            SQLite WASM • C# .NET • MSSQL • Performance Tuning
+          </div>
+        </article>
+
+        <!-- Item 2 -->
+        <article class="space-y-2">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <h4 class="font-semibold text-neutral-900 dark:text-neutral-100">
+              Transitioning Team Applications to Go
+            </h4>
+            <span class="font-mono text-xs text-neutral-400 dark:text-neutral-500">Stack Modernization</span>
+          </div>
+          <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+            Guided the transition from JavaScript-heavy web applications to compiled Go binaries. This eliminated volatile npm dependency churn, patched recurring security vulnerabilities (CVEs), and produced lightweight, self-contained services that operate with near-zero maintenance.
+          </p>
+          <div class="font-mono text-xs text-neutral-400 dark:text-neutral-500 pt-1">
+            Go (Golang) • Single-Binary Microservices • Security & Reliability
+          </div>
+        </article>
+
+        <!-- Item 3 -->
+        <article class="space-y-2">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <h4 class="font-semibold text-neutral-900 dark:text-neutral-100">
+              10-Year Lifecycle: Enterprise Work Planning App
+            </h4>
+            <span class="font-mono text-xs text-neutral-400 dark:text-neutral-500">Full-Lifecycle Ownership</span>
+          </div>
+          <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+            Part of a small team that designed, developed, and maintained a mission-critical Work Planning application through its complete 10+ year lifespan—from initial development to active maintenance and replacement planning. Still actively running in production today.
+          </p>
+          <div class="font-mono text-xs text-neutral-400 dark:text-neutral-500 pt-1">
+            AngularJS • C# .NET API • MSSQL • Microsoft Graph API
+          </div>
+        </article>
+
+        <!-- Item 4 -->
+        <article class="space-y-2">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <h4 class="font-semibold text-neutral-900 dark:text-neutral-100">
+              Enterprise Integration Hubs & Graph API Pipelines
+            </h4>
+            <span class="font-mono text-xs text-neutral-400 dark:text-neutral-500">Polyglot Integrations</span>
+          </div>
+          <p class="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+            Engineered numerous pipelines syncing data between distributed applications, Microsoft Graph API, and planning software hubs using Go, TypeScript/Node.js, Python, and C#.
+          </p>
+          <div class="font-mono text-xs text-neutral-400 dark:text-neutral-500 pt-1">
+            Go • C# • TypeScript • Python • REST APIs
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECTION: EXPERIENCE TIMELINE -->
+    <section class="space-y-6 pt-4 border-t border-neutral-200 dark:border-neutral-850">
+      <div class="space-y-1">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-neutral-400 dark:text-neutral-500 font-semibold">
+          Career
+        </h2>
+        <h3 class="text-lg font-bold text-neutral-950 dark:text-white">
+          Work History at Interstates
+        </h3>
+      </div>
+
+      <div class="space-y-8">
+        
+        <!-- Role 1 -->
+        <div class="space-y-2">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <h4 class="font-semibold text-neutral-900 dark:text-neutral-100">
+              Senior Application Developer • AI Delivery Team
+            </h4>
+            <span class="font-mono text-xs text-neutral-400 dark:text-neutral-500">2024 — Present</span>
+          </div>
+          <ul class="space-y-1.5 text-sm text-neutral-600 dark:text-neutral-400 list-disc pl-4">
+            <li>Researching and developing information platforms using RAG strategies, specializing in document conversion fidelity, table extraction, and file-based knowledge stores (OKF).</li>
+            <li>Promoted to Senior Application Developer by staying current with technology trends and educating peers.</li>
+            <li>Tasked with training new developers and teaching whole-system architecture thinking rather than viewing problems as narrow code slices.</li>
+          </ul>
+        </div>
+
+        <!-- Role 2 -->
+        <div class="space-y-2">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <h4 class="font-semibold text-neutral-900 dark:text-neutral-100">
+              Application Developer • Full Lifecycle Systems
+            </h4>
+            <span class="font-mono text-xs text-neutral-400 dark:text-neutral-500">2012 — 2024</span>
+          </div>
+          <ul class="space-y-1.5 text-sm text-neutral-600 dark:text-neutral-400 list-disc pl-4">
+            <li>Built and maintained the Work Planning application across a decade-long software lifecycle.</li>
+            <li>Migrated client-side electrical construction data app from deprecated WebSQL to SQLite WASM with zero downtime.</li>
+            <li>Helped modernize team development practices toward Go to minimize dependency bloat and eliminate vulnerabilities.</li>
+            <li>Built polyglot software integrations interfacing with Microsoft Graph API and central planning hubs.</li>
+          </ul>
+        </div>
+
+        <!-- Role 3 -->
+        <div class="space-y-2">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <h4 class="font-semibold text-neutral-900 dark:text-neutral-100">
+              Help Desk Supervisor & Application Developer
+            </h4>
+            <span class="font-mono text-xs text-neutral-400 dark:text-neutral-500">2010 — 2012</span>
+          </div>
+          <ul class="space-y-1.5 text-sm text-neutral-600 dark:text-neutral-400 list-disc pl-4">
+            <li>Held dual responsibility for help desk leadership and internal application development.</li>
+            <li>Facilitated the foundational change from Microsoft Access desktop tools to modern web development with PHP and ASP.NET.</li>
+          </ul>
+        </div>
+
+        <!-- Role 4 -->
+        <div class="space-y-2">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <h4 class="font-semibold text-neutral-900 dark:text-neutral-100">
+              Help Desk Technician → Supervisor
+            </h4>
+            <span class="font-mono text-xs text-neutral-400 dark:text-neutral-500">2008 — 2010</span>
+          </div>
+          <ul class="space-y-1.5 text-sm text-neutral-600 dark:text-neutral-400 list-disc pl-4">
+            <li>Promoted to supervisor within two years by demonstrating technical initiative and operational reliability.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: HOME AI LAB -->
+    <section class="space-y-4 pt-4 border-t border-neutral-200 dark:border-neutral-850">
+      <div class="space-y-1">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-neutral-400 dark:text-neutral-500 font-semibold">
+          Exploration
+        </h2>
+        <h3 class="text-lg font-bold text-neutral-950 dark:text-white">
+          Dedicated Home AI Server
+        </h3>
+      </div>
+      <p class="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
+        In my free time, I maintain a dedicated on-premise AI server to explore AI-assisted development. I run and benchmark local open-weights models using <strong>Ollama</strong> and <strong>llama.cpp</strong> to evaluate their strengths and weaknesses on code generation and document understanding, and actively experiment with frontier models and agentic workflows including <strong>Gemini</strong>, <strong>Antigravity</strong>, <strong>Claude Code</strong>, and <strong>Pi coding agent</strong>.
+      </p>
+    </section>
+
+    <!-- SECTION: TECHNICAL ARSENAL -->
+    <section class="space-y-6 pt-4 border-t border-neutral-200 dark:border-neutral-850">
+      <div class="space-y-1">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-neutral-400 dark:text-neutral-500 font-semibold">
+          Stack
+        </h2>
+        <h3 class="text-lg font-bold text-neutral-950 dark:text-white">
+          Technical Tooling
+        </h3>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
+        <div class="space-y-1.5">
+          <div class="font-mono text-xs text-neutral-400 dark:text-neutral-500 font-semibold">Languages & Backend</div>
+          <p class="text-neutral-800 dark:text-neutral-200">
+            Go (Golang), C# (.NET Core), TypeScript / Node.js, SQL, Python (conversion & scripting), PHP, Bash
+          </p>
+        </div>
+
+        <div class="space-y-1.5">
+          <div class="font-mono text-xs text-neutral-400 dark:text-neutral-500 font-semibold">Document & AI Systems</div>
+          <p class="text-neutral-800 dark:text-neutral-200">
+            Document conversion, Table fidelity, File-Based RAG (OKF), Structured Markdown, Gemini, Antigravity, Claude Code, Ollama, llama.cpp
+          </p>
+        </div>
+
+        <div class="space-y-1.5">
+          <div class="font-mono text-xs text-neutral-400 dark:text-neutral-500 font-semibold">Data & WebAssembly</div>
+          <p class="text-neutral-800 dark:text-neutral-200">
+            SQLite WASM (client-side), MSSQL, Microsoft Graph API, REST APIs, Git-backed knowledge stores
+          </p>
+        </div>
+
+        <div class="space-y-1.5">
+          <div class="font-mono text-xs text-neutral-400 dark:text-neutral-500 font-semibold">Engineering Practices</div>
+          <p class="text-neutral-800 dark:text-neutral-200">
+            Whole-system architecture, 10-year lifecycles, zero-churn software, developer mentorship
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: EDUCATION & ROOTS -->
+    <section class="space-y-6 pt-4 border-t border-neutral-200 dark:border-neutral-850">
+      <div class="space-y-1">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-neutral-400 dark:text-neutral-500 font-semibold">
+          Background
+        </h2>
+        <h3 class="text-lg font-bold text-neutral-950 dark:text-white">
+          Education & Community
+        </h3>
+      </div>
+
+      <div class="space-y-4 text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
+        <div class="space-y-1">
+          <div class="font-medium text-neutral-900 dark:text-neutral-100">
+            Bachelor of Arts in English Literature — Dordt University (2006)
+          </div>
+          <div class="text-neutral-600 dark:text-neutral-400 text-xs">
+            Deep grounding in narrative discourse, linguistic ambiguity, and textual syntax.
+          </div>
+        </div>
+
+        <div class="space-y-1">
+          <div class="font-medium text-neutral-900 dark:text-neutral-100">
+            Associate Degree in Computer Programming — Southeast Technical Institute (2003)
+          </div>
+          <div class="text-neutral-600 dark:text-neutral-400 text-xs">
+            Foundational software development, relational databases, and systems fundamentals.
+          </div>
+        </div>
+
+        <p class="pt-2 text-xs text-neutral-500 dark:text-neutral-400">
+          I've lived in Rock Valley and Hull, Iowa since 2008 with my wife Michelle and our six children. Active member of Calvary Protestant Reformed Church and served on the school boards for Hull Protestant Reformed School and Trinity High School.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER / COLOPHON -->
+    <footer class="pt-8 border-t border-neutral-200 dark:border-neutral-850 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-neutral-400 dark:text-neutral-500 no-print">
+      <div>trentvb.com • Trent Van Bemmel</div>
+      <div class="flex gap-4">
+        <button onclick="window.print()" class="hover:text-neutral-900 dark:hover:text-neutral-100">print cv</button>
+        <button onclick="toggleTheme()" class="hover:text-neutral-900 dark:hover:text-neutral-100">toggle theme [t]</button>
+      </div>
+    </footer>
+
+  </main>
+
 </body>
-<footer class="blog-footer">
-    <show-quotes></show-quotes>
-</footer>
-
 </html>
